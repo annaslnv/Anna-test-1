@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — Техника событий</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Техника событий</a>
+      <button class="nav-toggle" type="button" aria-label="Меню" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="o-kompanii.html">О компании</a>
+        <a href="uslugi.html">Услуги</a>
+        <a href="tipy-meropriyatiy.html">Типы мероприятий</a>
+        <a href="portfolio.html" class="active">Портфолио</a>
+        <a href="kak-rabotaem.html">Как мы работаем</a>
+        <a href="kontakty.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label"><a href="index.html" style="color: inherit; text-decoration: none;">Главная</a></p>
+      <h1>Портфолио</h1>
+      <p class="lead">Примеры выполненных проектов: концерты, конференции, частные праздники, open-air и другие мероприятия.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="name">Концерт</div>
+          <div class="desc">Звук и свет на концертной площадке. Профессиональное оборудование и работа операторов.</div>
+        </div>
+        <div class="portfolio-item">
+          <div class="name">Корпоративная конференция</div>
+          <div class="desc">Озвучивание зала, видеосвязь для удалённых участников, синхронный перевод.</div>
+        </div>
+        <div class="portfolio-item">
+          <div class="name">Частный праздник</div>
+          <div class="desc">Оформление банкетного зала, музыкальное сопровождение, съёмка и трансляция.</div>
+        </div>
+        <div class="portfolio-item">
+          <div class="name">Презентация</div>
+          <div class="desc">Звук для спикеров, видео на экранах, световое оформление.</div>
+        </div>
+        <div class="portfolio-item">
+          <div class="name">Open-Air фестиваль</div>
+          <div class="desc">Звуковые системы и сценическое освещение для открытой площадки.</div>
+        </div>
+        <div class="portfolio-item">
+          <div class="name">Онлайн-трансляция</div>
+          <div class="desc">Прямая трансляция мероприятия в высоком разрешении.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="img-placeholder">Фото</div>
+      <div>
+        <h2>Обсудим ваше мероприятие</h2>
+        <p>Опишите событие и площадку — подготовим предложение.</p>
+        <a href="kontakty.html" class="cta">Связаться</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <a href="index.html" class="brand">Техника событий</a>
+      <div class="footer-links">
+        <a href="tel:+79062027217">8 (906) 202-72-17</a>
+        <a href="https://vk.ru/tekhnikaevent" target="_blank" rel="noopener">VK</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.querySelectorAll('nav a').forEach(function(a) { a.addEventListener('click', function() { document.querySelector('nav').classList.remove('open'); }); });</script>
+</body>
+</html>
