@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О компании — Техника событий</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Техника событий</a>
+      <button class="nav-toggle" type="button" aria-label="Меню" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="o-kompanii.html" class="active">О компании</a>
+        <a href="uslugi.html">Услуги</a>
+        <a href="tipy-meropriyatiy.html">Типы мероприятий</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="kak-rabotaem.html">Как мы работаем</a>
+        <a href="kontakty.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label"><a href="index.html" style="color: inherit; text-decoration: none;">Главная</a></p>
+      <h1>О компании</h1>
+      <p class="lead">Более 15 лет на рынке. Звук, свет, видео и профессиональная работа на мероприятии. Надёжный партнёр для организаций и частных лиц.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <h2>Техника событий</h2>
+          <p>Компания полного цикла: мы предоставляем качественное звуковое, световое и видеооборудование и обеспечиваем высокий уровень работы непосредственно на мероприятии.</p>
+          <p>Опыт работы на рынке — более 15 лет. За этот период мы зарекомендовали себя надёжным партнёром для организаций и частных лиц любого масштаба. Работаем с государственными учреждениями.</p>
+        </div>
+        <div class="img-placeholder">Фото</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h2>Почему мы</h2>
+      <div class="cards-row">
+        <div class="card-schema">
+          <div class="card-name">Опыт и компетенции</div>
+          <div class="card-body">Более 15 лет и проекты разной сложности подтверждают профессионализм команды.</div>
+          <a href="kontakty.html" class="link-detail">Подробнее</a>
+        </div>
+        <div class="card-schema">
+          <div class="card-name">Широкий спектр проектов</div>
+          <div class="card-body">Адаптируемся к любым условиям и требованиям заказчика.</div>
+          <a href="kontakty.html" class="link-detail">Подробнее</a>
+        </div>
+        <div class="card-schema">
+          <div class="card-name">Гибкий подход и сервис</div>
+          <div class="card-body">Быстрая реакция на изменения, полный цикл «под ключ». Работаем по договору.</div>
+          <a href="kontakty.html" class="link-detail">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="img-placeholder">Фото</div>
+      <div>
+        <h2>Обсудим ваше мероприятие</h2>
+        <p>Опишите событие и площадку — подготовим предложение.</p>
+        <a href="kontakty.html" class="cta">Связаться</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <a href="index.html" class="brand">Техника событий</a>
+      <div class="footer-links">
+        <a href="tel:+79062027217">8 (906) 202-72-17</a>
+        <a href="https://vk.ru/tekhnikaevent" target="_blank" rel="noopener">VK</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.querySelectorAll('nav a').forEach(function(a) { a.addEventListener('click', function() { document.querySelector('nav').classList.remove('open'); }); });</script>
+</body>
+</html>
