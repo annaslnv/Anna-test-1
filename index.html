@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Техника событий — главная</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Техника событий</a>
+      <button class="nav-toggle" type="button" aria-label="Меню" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+      <nav>
+        <a href="index.html" class="active">Главная</a>
+        <a href="o-kompanii.html">О компании</a>
+        <a href="uslugi.html">Услуги</a>
+        <a href="tipy-meropriyatiy.html">Типы мероприятий</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="kak-rabotaem.html">Как мы работаем</a>
+        <a href="kontakty.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Техника событий</h1>
+      <p class="lead">Техническое обеспечение мероприятий под ключ. Звук, свет, видео и профессиональная работа на площадке. Более 15 лет опыта. Концерты, конференции, частные праздники, онлайн-трансляции.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <h2>О компании</h2>
+          <p><strong>Техника событий</strong> — компания полного цикла: звуковое, световое и видеооборудование и высокий уровень работы на мероприятии.</p>
+          <p>Опыт на рынке — более 15 лет. Надёжный партнёр для организаций и частных лиц. Работаем с государственными учреждениями.</p>
+        </div>
+        <div class="img-placeholder">Фото</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h2>Услуги</h2>
+      <p style="margin-bottom: 24px; color: #444;">Полный спектр технического сопровождения: аренда оборудования, монтаж, настройка и работа специалистов на площадке.</p>
+      <div class="cards-row">
+        <div class="card-schema">
+          <div class="card-name">Концерты</div>
+          <div class="card-body">Звук, свет, мультимедиа. Звукооператор и оператор света на площадке.</div>
+          <div class="card-meta">По запросу</div>
+          <a href="kontakty.html" class="link-detail">Подробнее</a>
+        </div>
+        <div class="card-schema">
+          <div class="card-name">Частные праздники</div>
+          <div class="card-body">Оформление залов, музыкальное сопровождение, съёмка и трансляция.</div>
+          <div class="card-meta">По запросу</div>
+          <a href="kontakty.html" class="link-detail">Подробнее</a>
+        </div>
+        <div class="card-schema">
+          <div class="card-name">Презентации</div>
+          <div class="card-body">Звук для спикеров, видео, интерактивные панели. Световое оформление.</div>
+          <div class="card-meta">По запросу</div>
+          <a href="kontakty.html" class="link-detail">Подробнее</a>
+        </div>
+        <div class="card-schema">
+          <div class="card-name">Конференции</div>
+          <div class="card-body">Озвучивание зала, синхронный перевод, видеосвязь для удалённых участников.</div>
+          <div class="card-meta">По запросу</div>
+          <a href="kontakty.html" class="link-detail">Подробнее</a>
+        </div>
+        <div class="card-schema">
+          <div class="card-name">Open-Air</div>
+          <div class="card-body">Звуковые системы для открытых пространств. Сценическое освещение.</div>
+          <div class="card-meta">По запросу</div>
+          <a href="kontakty.html" class="link-detail">Подробнее</a>
+        </div>
+        <div class="card-schema">
+          <div class="card-name">Онлайн-трансляции</div>
+          <div class="card-body">Прямые трансляции в высоком разрешении. Стабильная связь.</div>
+          <div class="card-meta">По запросу</div>
+          <a href="kontakty.html" class="link-detail">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="img-placeholder">Фото</div>
+      <div>
+        <h2>Обсудим ваше мероприятие</h2>
+        <p>Опишите событие и площадку — подготовим предложение.</p>
+        <a href="kontakty.html" class="cta">Связаться</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <a href="index.html" class="brand">Техника событий</a>
+      <div class="footer-links">
+        <a href="tel:+79062027217">8 (906) 202-72-17</a>
+        <a href="https://vk.ru/tekhnikaevent" target="_blank" rel="noopener">VK</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.querySelectorAll('nav a').forEach(function(a) { a.addEventListener('click', function() { document.querySelector('nav').classList.remove('open'); }); });</script>
+</body>
+</html>
