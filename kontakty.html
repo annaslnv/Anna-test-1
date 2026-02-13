@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Техника событий</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Техника событий</a>
+      <button class="nav-toggle" type="button" aria-label="Меню" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="o-kompanii.html">О компании</a>
+        <a href="uslugi.html">Услуги</a>
+        <a href="tipy-meropriyatiy.html">Типы мероприятий</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="kak-rabotaem.html">Как мы работаем</a>
+        <a href="kontakty.html" class="active">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label"><a href="index.html" style="color: inherit; text-decoration: none;">Главная</a></p>
+      <h1>Контакты</h1>
+      <p class="lead">Свяжитесь с нами по телефону или в мессенджере — обсудим задачу и подберём решение под ваш формат мероприятия.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <h2>Как связаться</h2>
+          <p><strong>Телефон:</strong> <a href="tel:+79062027217">8 (906) 202-72-17</a></p>
+          <p><strong>ВКонтакте:</strong> <a href="https://vk.ru/tekhnikaevent" target="_blank" rel="noopener">vk.ru/tekhnikaevent</a></p>
+          <p>Работаем по договору. Центральная Россия, северо-запад.</p>
+        </div>
+        <div class="img-placeholder">Фото</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="img-placeholder">Фото</div>
+      <div>
+        <h2>Написать в мессенджер</h2>
+        <p>Ответим в ближайшее время и подготовим предложение.</p>
+        <a href="https://vk.ru/tekhnikaevent" class="cta" target="_blank" rel="noopener">VK</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <a href="index.html" class="brand">Техника событий</a>
+      <div class="footer-links">
+        <a href="tel:+79062027217">8 (906) 202-72-17</a>
+        <a href="https://vk.ru/tekhnikaevent" target="_blank" rel="noopener">VK</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.querySelectorAll('nav a').forEach(function(a) { a.addEventListener('click', function() { document.querySelector('nav').classList.remove('open'); }); });</script>
+</body>
+</html>
